@@ -53,6 +53,21 @@ form label {
     margin-right: 3vh;
 }
 
+.footer-row-middle {
+    flex-direction: column;
+    margin-bottom: 8vh;
+}
+
+.footer-row-middle-h2 {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.footer-row-middle-h5 {
+    font-weight: 300;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
 .join-us-card {
     background-color: white;
     border-radius: 3vh;
@@ -202,6 +217,7 @@ form label {
 #footer-row-bottom-right {
     justify-content: right;
 }
+
 #join-us-card-container {
     align-items: stretch;
     flex-direction: row;
@@ -255,15 +271,15 @@ form label {
 }
 
 #order-now-img-container {
-    flex-direction: column;
     align-items: center;
+    background-image: url("../assets/img/path-1.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
     justify-content: center;
     padding: 0;
     width: 50vh;
-    background-image: url("../assets/img/path-1.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 100%;
 }
 
 #order-now-paragraph-container {
@@ -274,18 +290,3 @@ form label {
     width: 50vh;
 }
 
-.footer-row-middle {
-    margin-bottom: 8vh;
-    flex-direction: column;
-}
-
-.footer-row-middle-h2 {
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
-.footer-row-middle-h5 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    font-weight: 300;
-}
