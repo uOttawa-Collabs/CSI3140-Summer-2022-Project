@@ -59,4 +59,25 @@ $(document).ready(() => {
     modalClose.click(() => {
         $("#nav-modal").css("display", "none");
     });
+
+    function sendFunction(){
+
+        var userName = document.getElementById("contact-us-form-input-name").value;
+        var userEmail = document.getElementById("contact-us-form-input-email").value;
+        var userMsg = document.getElementById("contact-us-form-input-message").value;
+
+        if(userName == ""){
+            alert("Please enter your name!");
+        }
+        else if(userEmail == ""){
+            alert("Please enter your email!");
+        }
+        else if(userMsg == ""){
+            alert("Please enter your message!");
+        }
+        else{
+            alert("Thank you, " + userName + "! We have received your message!");
+        }
+    }
+
 });
