@@ -4,12 +4,17 @@ $(document).ready(() => {
     let modalClose = $("#modal-close");
     let modalSubmit = $("#modal-submit");
 
+    let inputEmail = $("input#email");
+    let inputPassword = $("input#pwd");
+
     let signAction = (text) => {
         alert(text + " successfully");
         signModal.css("display", "none");
     };
 
     $("button#navbar-button-sign-in").click(() => {
+        inputEmail.val("");
+        inputPassword.val("");
         signTitle.text("Sign In");
         modalSubmit.text("Sign In");
         modalSubmit.off("click");
@@ -22,6 +27,8 @@ $(document).ready(() => {
     });
 
     $("button#navbar-button-sign-up").click(() => {
+        inputEmail.val("");
+        inputPassword.val("");
         signTitle.text("Sign Up");
         modalSubmit.text("Sign Up");
         modalSubmit.off("click");
