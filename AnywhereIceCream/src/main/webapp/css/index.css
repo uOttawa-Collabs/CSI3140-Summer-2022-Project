@@ -141,27 +141,31 @@ form label {
 }
 
 .section-sub-title {
-    font-weight: 300;
+    font-weight : 300;
 }
 
 .section-title-container {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 10vh;
+    align-items     : center;
+    flex-direction  : column;
+    justify-content : center;
+    margin-bottom   : 10vh;
+}
+
+.fade {
+    opacity : 0;
 }
 
 #about-us-body-container {
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
+    align-items     : center;
+    flex-direction  : row;
+    justify-content : center;
 }
 
 #about-us-container {
-    background-image: url("../assets/img/path-3.png");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 70%;
+    background-image    : url("../assets/img/path-3.png");
+    background-position : right;
+    background-repeat   : no-repeat;
+    background-size     : 70%;
 }
 
 #about-us-img-container {
