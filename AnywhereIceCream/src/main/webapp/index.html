@@ -46,17 +46,47 @@
             </ul>
             <ul class="navbar-nav navbar-right" id="navbar-nav-ul-right">
                 <li class="nav-item">
-                    <button class="btn navbar-button" href="javascript:void(0);" id="navbar-button-sign-in">Sign In
+                    <button class="btn navbar-button" onclick="navBtn_Click('In');" id="navbar-button-sign-in">Sign In
                     </button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn navbar-button" href="javascript:void(0);" id="navbar-button-sign-up">Sign Up
+                    <button class="btn navbar-button" onclick="navBtn_Click('up');" id="navbar-button-sign-up">Sign Up
                     </button>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
+
+<div id="navModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="section-title" id="signTitle">Sign In</h2>
+            <span class="close" onclick="span_Click()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <form action="" onsubmit="SignIn_Click()">
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+                </div>
+                <div class="form-check mb-3">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="modalSubmit">Sign In</button>
+            </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+</div>
+
 <main id="main">
     <section id="order-now">
         <div class="container section-container" id="order-now-container">
