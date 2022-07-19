@@ -294,3 +294,81 @@ form label {
     width: 50vh;
 }
 
+
+.modal {
+    background-color : rgb(0, 0, 0);
+    background-color : rgba(0, 0, 0, 0.4);
+    display          : none;
+    height           : 100%;
+    left             : 0;
+    overflow         : auto;
+    padding-top      : 100px;
+    position         : fixed;
+    top              : 0;
+    width            : 100%;
+    z-index          : 1;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top     : -300px;
+        opacity : 0
+    }
+    to {
+        top     : 0;
+        opacity : 1
+    }
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.close {
+    color: var(--color-ice-cream-white);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1% 16px;
+    background-color: var(--color-ice-cream-yellow);
+    color: var(--color-ice-cream-yellow-contrast);
+}
+
+.modal-body{
+    margin-bottom: 1%;
+}
+
+.modal-footer {
+    padding: 2% 16px;
+    background-color: var(--color-ice-cream-yellow);
+    color: white;
+}
+
+#modal-submit {
+    float : right;
+}
