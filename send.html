@@ -4,12 +4,43 @@
         <meta charset="utf-8">
         <title>send function</title>
         <script type = "text/javascript">
-            function myFunction(){
-	            alert("We have received your message!");
+            
+
+            function sendFunction(){
+
+                var userName = document.getElementById("contact-us-form-input-name").value;
+                var userEmail = document.getElementById("contact-us-form-input-email").value;
+                var userMsg = document.getElementById("contact-us-form-input-message").value;
+
+                if(userName == ""){
+                    alert("Please enter your name!");
+                }
+                else if(userEmail == ""){
+                    alert("Please enter your email!");
+                }
+                else if(userMsg == ""){
+                    alert("Please enter your message!");
+                }
+                else{
+                    alert("Thank you, " + userName + "! We have received your message!");
+                }
             }
+
         </script>
     </head>
     <body>
-        <input type="button" onclick="myFunction()" value="send" />
+        <div>
+            <input id="contact-us-form-input-name" placeholder="Your name" type="text">
+        </div>
+        <div>
+            <input id="contact-us-form-input-email" placeholder="example@your.domain" type="text">
+        </div>
+        <div>
+            <textarea id="contact-us-form-input-message" placeholder="Hi there..." rows="5"></textarea>
+        </div>
+        <div>
+            <input type="button" onclick="sendFunction()" value="send" />
+        </div>
+        
     </body>
 </html>
