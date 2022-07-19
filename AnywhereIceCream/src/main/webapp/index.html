@@ -46,40 +46,39 @@
             </ul>
             <ul class="navbar-nav navbar-right" id="navbar-nav-ul-right">
                 <li class="nav-item">
-                    <button class="btn navbar-button" onclick="navBtn_Click('In');" id="navbar-button-sign-in">Sign In
-                    </button>
+                    <button class="btn navbar-button" id="navbar-button-sign-in">Sign In</button>
                 </li>
                 <li class="nav-item">
-                    <button class="btn navbar-button" onclick="navBtn_Click('up');" id="navbar-button-sign-up">Sign Up
-                    </button>
+                    <button class="btn navbar-button" id="navbar-button-sign-up">Sign Up</button>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 
-<div id="navModal" class="modal">
+<div class="modal" id="nav-modal">
     <div class="modal-content">
         <div class="modal-header">
-            <h2 class="section-title" id="signTitle">Sign In</h2>
-            <span class="close" onclick="span_Click()">&times;</span>
+            <h2 class="section-title" id="sign-title">Sign In</h2>
+            <span class="close" id="modal-close">&times;</span>
         </div>
         <div class="modal-body">
-            <form action="" onsubmit="SignIn_Click()">
+            <form action="">
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                 </div>
                 <div class="mb-3">
                     <label for="pwd" class="form-label">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
+                    <input class="form-control" id="pwd" name="password" placeholder="Enter password" required
+                           type="password">
                 </div>
                 <div class="form-check mb-3">
                     <label class="form-check-label">
                         <input class="form-check-input" type="checkbox" name="remember"> Remember me
                     </label>
                 </div>
-                <button type="submit" class="btn btn-primary" id="modalSubmit">Sign In</button>
+                <button class="btn btn-primary" id="modal-submit" type="submit">Sign In</button>
             </form>
         </div>
         <div class="modal-footer">
@@ -100,7 +99,7 @@
                     <h5 class="order-now-h5" id="order-now-h5-2">anywhere, anytime</h5>
                 </div>
                 <div class="container" id="order-now-button-container">
-                    <button class="btn button-common" href="javascript:void(0);" id="order-now-button">Order Now!
+                    <button class="btn button-common" id="order-now-button" onclick="void(0);">Order Now!
                     </button>
                 </div>
             </div>
@@ -132,7 +131,7 @@
                             downloaded by customers.
                         </p>
                     </div>
-                    <button class="btn button-common join-us-card-button" href="javascript:void(0);"
+                    <button class="btn button-common join-us-card-button" onclick="void(0);"
                             id="join-us-card-shop-button">Join
                     </button>
                 </div>
@@ -149,7 +148,7 @@
                             customers and increase sales.
                         </p>
                     </div>
-                    <button class="btn button-common join-us-card-button" href="javascript:void(0);"
+                    <button class="btn button-common join-us-card-button" onclick="void(0);"
                             id="join-us-card-driver-button">
                         Join
                     </button>

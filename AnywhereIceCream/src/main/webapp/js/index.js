@@ -1,39 +1,39 @@
+$(document).ready(() => {
+    let signModal = $("#nav-modal");
+    let signTitle = $("#sign-title");
+    let modalClose = $("#modal-close");
+    let modalSubmit = $("#modal-submit");
 
-function navBtn_Click(para) {
-    var signInModal = document.getElementById("navModal");
-    signInModal.style.display = "block";
+    let signAction = (text) => {
+        alert(text + " successfully");
+        signModal.css("display", "none");
+    };
 
-    if(para == "In"){
-        document.getElementById("signTitle").textContent = "Sign In";
-        document.getElementById("modalSubmit").textContent = "Sign In";
-    }else{
-        document.getElementById("signTitle").textContent = "Sign Up";
-        document.getElementById("modalSubmit").textContent = "Sign Up";
-        
-    }
-}
+    $("button#navbar-button-sign-in").click(() => {
+        signTitle.text("Sign In");
+        modalSubmit.text("Sign In");
+        modalSubmit.off("click");
+        modalSubmit.click((e) => {
+            e.preventDefault();
+            signAction("Signed in");
+        });
 
-function span_Click() {
-    var signInModal = document.getElementById("navModal");
-    signInModal.style.display = "none";
-}
+        signModal.css("display", "block");
+    });
 
-function SignIn_Click(){
-    var para = document.getElementById("signTitle").textContent;
-    if(para == "Sign In"){
-        alert("Sign In Successfully.");
-    }else{
-        alert("Sign Up Successfully.")
-    }
-    
-}
+    $("button#navbar-button-sign-up").click(() => {
+        signTitle.text("Sign Up");
+        modalSubmit.text("Sign Up");
+        modalSubmit.off("click");
+        modalSubmit.click((e) => {
+            e.preventDefault();
+            signAction("Signed up");
+        });
 
-window.onclick = function(event) {
-    var signInModal = document.getElementById("navModal");
-    if (event.target == signInModal) {
-        signInModal.style.display = "none";
-    }
-}
+        signModal.css("display", "block");
+    });
 
-
-
+    modalClose.click(() => {
+        $("#nav-modal").css("display", "none");
+    });
+});
