@@ -13,20 +13,24 @@
     <link crossorigin="anonymous"
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css"
           integrity="sha512-o/MhoRPVLExxZjCFVBsm17Pkztkzmh7Dp8k7/3JrtNCHh0AQ489kwpfA3dPSHzKDe8YCuEhxXq3Y71eb/o6amg=="
-          referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet"/>
+          referrerpolicy="no-referrer" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" />
 
     <script crossorigin="anonymous"
             integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script crossorigin="anonymous"
             integrity="sha512-ndrrR94PW3ckaAvvWrAzRi5JWjF71/Pw7TlSo6judANOFCmz0d+0YE+qIGamRRSnVzSvIyGs4BTtyFMm3MT/cg=="
-            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.bundle.min.js"></script>
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.bundle.min.js"></script>
     <script crossorigin="anonymous"
             integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-            referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 <body>
@@ -65,17 +69,17 @@
         <div class="modal-body">
             <form action="">
                 <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    <label class="form-label" for="email">Email:</label>
+                    <input class="form-control" id="email" name="email" placeholder="Enter email" required type="email">
                 </div>
                 <div class="mb-3">
-                    <label for="pwd" class="form-label">Password:</label>
+                    <label class="form-label" for="pwd">Password:</label>
                     <input class="form-control" id="pwd" name="password" placeholder="Enter password" required
                            type="password">
                 </div>
                 <div class="form-check mb-3">
                     <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        <input class="form-check-input" name="remember" type="checkbox"> Remember me
                     </label>
                 </div>
                 <button class="btn btn-primary" id="modal-submit" type="submit">Sign In</button>
@@ -105,7 +109,7 @@
             </div>
             <div class="container" id="order-now-img-container">
                 <!--                <img src="assets/img/path-1.png" id="order-now-img-path-1" alt="decorative"/>-->
-                <img alt="decorative" id="order-now-img-ice-cream" src="assets/img/ice-cream.svg"/>
+                <img alt="decorative" id="order-now-img-ice-cream" src="assets/img/ice-cream.svg" />
             </div>
         </div>
     </section>
@@ -131,13 +135,13 @@
                             downloaded by customers.
                         </p>
                     </div>
-                    <button class="btn button-common join-us-card-button" onclick="void(0);"
-                            id="join-us-card-shop-button">Join
+                    <button class="btn button-common join-us-card-button" id="join-us-card-shop-button"
+                            onclick="void(0);">Join
                     </button>
                 </div>
                 <div class="container join-us-card" id="join-us-card-driver">
                     <div class="container join-us-card-img-container" id="join-us-card-driver-img-container">
-                        <img alt="decorative" id="join-us-card-driver-img" src="assets/img/van.png"/>
+                        <img alt="decorative" id="join-us-card-driver-img" src="assets/img/van.png" />
                     </div>
                     <div class="container join-us-card-text-container" id="join-us-card-driver-text-container">
                         <h3 class="join-us-card-h3" id="join-us-card-driver-h3">Join as a Driver</h3>
@@ -148,8 +152,8 @@
                             customers and increase sales.
                         </p>
                     </div>
-                    <button class="btn button-common join-us-card-button" onclick="void(0);"
-                            id="join-us-card-driver-button">
+                    <button class="btn button-common join-us-card-button" id="join-us-card-driver-button"
+                            onclick="void(0);">
                         Join
                     </button>
                 </div>
@@ -171,7 +175,7 @@
                     </p>
                 </div>
                 <div class="container" id="about-us-img-container">
-                    <img alt="decorative" id="about-us-img" src="assets/img/box.png"/>
+                    <img alt="decorative" id="about-us-img" src="assets/img/box.png" />
                 </div>
             </div>
         </div>
@@ -197,18 +201,20 @@
                             </div>
                             <div class="col">
                                 <label class="contact-us-form-label" for="contact-us-form-input-email">Email</label>
-                                <input class="form-control" id="contact-us-form-input-email" placeholder="example@your.domain"
+                                <input class="form-control" id="contact-us-form-input-email"
+                                       placeholder="example@your.domain"
                                        type="email">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <label class="contact-us-form-label" for="contact-us-form-input-message">Message</label>
-                                <textarea class="form-control" id="contact-us-form-input-message" placeholder="Hi there..."
+                                <textarea class="form-control" id="contact-us-form-input-message"
+                                          placeholder="Hi there..."
                                           rows="5"></textarea>
                             </div>
                         </div>
-                        <button class="btn button-common contact-us-button" onclick="sendFuction();"
+                        <button class="btn button-common contact-us-button"
                                 id="contact-us-form-button-submit"
                                 type="submit">
                             Send
@@ -230,7 +236,7 @@
             <div class="container footer-row-middle" id="footer-row-middle-right">
                 <h2 class="footer-row-middle-h2">Business Hours</h2>
                 <h5 class="footer-row-middle-h5" id="footer-row-business-hours-h5-1">Monday to Friday, 9:30 AM to 5:30
-                    PM</h5>
+                                                                                     PM</h5>
                 <h5 class="footer-row-middle-h5" id="footer-row-business-hours-h5-2">Rest on Statutory Holidays</h5>
             </div>
         </div>
