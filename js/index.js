@@ -15,13 +15,17 @@ $(document).ready(() => {
     $(window).scroll();
 
     // Sign in & Sign up dialog
-    let signModal = $("#nav-modal");
-    let signTitle = $("#sign-title");
-    let modalClose = $("#modal-close");
-    let modalSubmit = $("#modal-submit");
+    const signModal = $("#nav-modal");
+    const signTitle = $("#sign-title");
+    const modalClose = $("#modal-close");
+    const modalSubmit = $("#modal-submit");
 
-    let inputEmail = $("input#email");
-    let inputPassword = $("input#pwd");
+    const inputEmail = $("input#email");
+    const inputPassword = $("input#pwd");
+
+    const inputFeedbackName = $("input#contact-us-form-input-name");
+    const inputFeedbackEmail = $("input#contact-us-form-input-email");
+    const inputFeedbackMessage = $("textarea#contact-us-form-input-message");
 
     let signAction = (text) => {
         alert(text + " successfully");
@@ -58,5 +62,29 @@ $(document).ready(() => {
 
     modalClose.click(() => {
         $("#nav-modal").css("display", "none");
+    });
+
+    $("button#contact-us-form-button-submit").click((e) => {
+        e.preventDefault();
+
+        if (inputFeedbackName.val() === "") {
+            alert("Please enter your name!");
+            return;
+        }
+
+        if (inputFeedbackEmail.val() === "") {
+            alert("Please enter your email!");
+            return;
+        }
+
+        if (inputFeedbackMessage.val() === "") {
+            alert("Please enter your message!");
+            return;
+        }
+
+        alert("Thank you, " + inputFeedbackName.val() + "! We have received your message!");
+        inputFeedbackName.val("");
+        inputFeedbackEmail.val("");
+        inputFeedbackMessage.val("");
     });
 });
